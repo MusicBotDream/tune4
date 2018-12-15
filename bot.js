@@ -314,7 +314,7 @@ function play(guild, song) {
 
 
 client.on('message', message => {
-    if (message.content === '4help') {
+    if (message.content === 'help') {
         let helpEmbed = new Discord.RichEmbed()
         .setTitle('**أوامر الميوزك...**')
         .setDescription('**برفكس البوت (!)**')
@@ -343,10 +343,6 @@ client.on('message', message => {
     }
 });
 
-const Discord = require("discord.js");
-const client = new Discord.Client();
-var prefix = "a";
-var adminprefix = 'a'
 const developers = ["472413769700474901","486149211595866112"]
 client.on('message', message => {
     var argresult = message.content.split(` `).slice(1).join(' ');
